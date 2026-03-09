@@ -133,6 +133,55 @@
   .slide.active > *:nth-child(3) { animation-delay: 0.2s; }
   .slide.active > *:nth-child(4) { animation-delay: 0.3s; }
   .slide.active > *:nth-child(5) { animation-delay: 0.4s; }
+
+  /* ===== Mobile Responsive ===== */
+  @media (max-width: 768px) {
+    body { overflow: hidden; }
+
+    .slide {
+      padding: 24px 20px 80px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    h1 { font-size: 1.8rem; margin-bottom: 12px; }
+    h2 { font-size: 1.4rem; margin-bottom: 16px; }
+    h3 { font-size: 1rem; margin-bottom: 12px; }
+    p, li { font-size: 0.95rem; line-height: 1.6; }
+    .subtitle { font-size: 1rem; }
+    .chapter-num { font-size: 0.85rem; }
+
+    .card { padding: 16px 18px; margin: 8px 0; border-radius: 12px; }
+    .card-row { flex-direction: column; gap: 10px; margin-top: 10px; }
+    .two-col { flex-direction: column; gap: 16px; }
+
+    .highlight-box { padding: 14px 18px; margin: 12px 0; font-size: 0.95rem; border-radius: 0 8px 8px 0; }
+
+    .big-number { font-size: 2.4rem; margin-bottom: 6px; }
+
+    .step { gap: 12px; margin: 8px 0; }
+    .step-num { min-width: 36px; height: 36px; font-size: 0.95rem; border-radius: 8px; }
+    .step-content { padding-top: 4px; }
+    .step-content strong { font-size: 1rem; }
+    .step-content p { font-size: 0.85rem; }
+
+    ul li { padding: 6px 0 6px 22px; }
+    ul li::before { top: 13px; width: 8px; height: 8px; }
+
+    .nav { bottom: 16px; right: 16px; gap: 8px; }
+    .nav button { width: 44px; height: 44px; font-size: 1.1rem; border-radius: 10px; }
+    .page-indicator { bottom: 24px; left: 16px; font-size: 0.8rem; }
+  }
+
+  @media (max-width: 400px) {
+    .slide { padding: 18px 14px 76px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; margin-bottom: 12px; }
+    h3 { font-size: 0.9rem; }
+    p, li { font-size: 0.85rem; }
+    .big-number { font-size: 2rem; }
+    .card { padding: 12px 14px; }
+  }
 </style>
 </head>
 <body>
